@@ -1,11 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" href="text/css" href="all.css">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <!--<link rel="stylesheet" type="text/css" href="queries.css">-->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <title>Hockey Land</title>
     </head>
     <body>
-        <div class="container">
-            
-        </div>
+        <header>
+            <nav>
+                <div class="row">
+                    <ul class="main-nav">
+                        <li><a href="#">What You'll Learn</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1><br> This is hockey</h1>
+                <a class="btn btn-full" href="#">Learn More</a>
+            </div>
+
+        </header>
+
+        <section class="section-features">
+
+            <div class="row">
+                <h2>All hockey &mdash; All the time</h2>
+                <p class="long-copy">Hockey Land provides top level training to players
+                    of all ages and skill levels. Through our on and off-ice training, we'll ensure 
+                    that you become the best player you can be in just 12 weeks. 
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col span-1-of-3 box">
+                    <ion-icon name="barbell-outline" class="icon-big"></ion-icon>
+                    <h3>Get in shape</h3>
+                    <p> Learn off-ice training methods that will improve your on-ice performance.
+                        You'll find yourself shooting harder and skating faster than ever before.
+                    </p>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <ion-icon name="trophy-outline" class="icon-big"></ion-icon>
+                    <h3>Compete in Tournaments</h3>
+                    <p> Compete against your peers in tournaments that will help you apply
+                        what you've learned into game situations. Our tournaments are fully refereed
+                        to give you that 'real game' experience.
+                    </p>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <ion-icon name="film-outline" class="icon-big"></ion-icon>
+                    <h3>Review film</h3>
+                    <p> Analyze footage of NHL players to see how the pros do it! Watching film 
+                        can help Hockey Landers understand how hockey players at the highest level 
+                        see the ice to line up the perfect shot or make a pinpoint pass.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-hockey">
+            <ul class="hockey-showcase clearfix">
+                <li>
+                    <figure class="hockey-photo">
+                        <img src="images/hockey-equipment.jpg" alt="Hockey equipment">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="hockey-photo">
+                        <img src="images/hockey-stop.jpg" alt="Hockey player stopping">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="hockey-photo">
+                        <img src="images/outdoor-skating.jpg" alt="Outdoor skating rink">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="hockey-photo">
+                        <img src="images/skates.jpg" alt="Ice skates">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section-team">
+            <div class="row">
+                <h2>Our Team</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
+                        <cite><img src="resources/img/customer-1.jpg"> Alberto Duncan</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
+                        <cite><img src="resources/img/customer-2.jpg"> Joana Silva</cite>
+                    </blockquote>
+                </div>   
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+                        <cite><img src="resources/img/customer-3.jpg"> Milton Chapman</cite>
+                    </blockquote>
+                </div>           
+            </div>
+        </section>
+
+        <section class="section-form">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#"  class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends" selected>Friends</option>
+                                <option value="search">Search engine</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked> Yes, please
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2020 by Hockey Land. All rights reserved.<br>
+                </p>
+            </div>
+
+        </footer>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     </body>
+
+
 </html>
